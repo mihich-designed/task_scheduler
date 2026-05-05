@@ -8,7 +8,7 @@ from pydantic import BaseModel
 
 class TaskStatus(str, Enum):
     NEW = "NEW"
-    IN_PROGRESS = "ON_PROGRESS"
+    IN_PROGRESS = "IN_PROGRESS"
     DONE = "DONE"
 
 class Task(BaseModel):

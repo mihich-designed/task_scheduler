@@ -3,8 +3,9 @@ from uuid import UUID
 from fastapi import APIRouter, Depends, HTTPException, status
 
 from src.modules.tasks.dependencies import get_task_service
+from src.modules.tasks.exceptions import TaskNotFoundError
 from src.modules.tasks.schemas import CreateTask, TaskResponse
-from src.modules.tasks.service import TaskService, TaskNotFoundError
+from src.modules.tasks.service import TaskService
 
 
 router = APIRouter(prefix='/tasks', tags=['tasks'])

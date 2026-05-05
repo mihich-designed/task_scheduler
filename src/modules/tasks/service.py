@@ -1,11 +1,9 @@
 from typing import Optional
 from uuid import UUID, uuid4
 
+from src.modules.tasks.exceptions import TaskNotFoundError
 from src.modules.tasks.models import Task, TaskStatus
 
-
-class TaskNotFoundError(Exception):
-    pass
 
 class TaskService:
     def __init__(self) -> None:

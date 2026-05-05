@@ -17,3 +17,9 @@ http://localhost:9000/docs
 
 ## Тесты
 uv run pytest
+
+## Архитектура
+- api.py — API/controller слой
+- service.py — бизнес-логика и in-memory storage
+- schemas.py — DTO и валидация
+- models.py — доменная модель и enum
