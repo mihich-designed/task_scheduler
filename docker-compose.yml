@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: task-scheduler-api
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
